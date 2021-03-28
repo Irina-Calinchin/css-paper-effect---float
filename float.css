@@ -1,0 +1,82 @@
+body {
+    background-color: #333;
+}
+/* div {
+    border: 3px solid #777;
+    /* HW1: the initial height (when border was 1px) = 12px
+} */
+.paper {
+    width: 700px;
+    margin: 20px auto;
+    /* border: 5px solid green; */
+}
+
+.paper .clear {
+    clear: both;
+}
+
+.paper .photo {
+    width: 700px;
+    height: 700px;
+    box-sizing: border-box;
+    border: 20px solid #777;
+    background-image: url(https://i.picsum.photos/id/316/700/700.jpg?hmac=tMhFgQ9x6U_chPjEnlP5QA_iBnA_J-8S6XiL5qbc3tI);
+    
+}
+
+.paper .photo .gradient-shadow {
+    width: 660px;
+    height: 660px;
+    /* NEW */
+    background-image: linear-gradient(90deg,#0005,#fffd,#0005);
+}
+
+.paper .shadow-top-left,
+.paper .shadow-top-right,
+.paper .shadow-bottom-left,
+.paper .shadow-bottom-right {
+    height: 20px;
+    width: 350px;
+    float: left;
+    box-sizing: border-box;
+    
+}
+
+.paper .shadow-top-left {
+    transform: 
+        translateY(30px)
+        rotate(3deg);
+
+    box-shadow: 15px -10px 15px 10px #171717;
+
+    /* NEW: position + z-index */
+    position: relative;
+    z-index: -1;
+}
+.paper .shadow-top-right {
+    transform: 
+        translateY(30px)
+        rotate(-3deg);
+
+    box-shadow: -15px -10px 15px 10px #171717;
+    position: relative;
+    z-index: -1;
+}
+.paper .shadow-bottom-left {
+    transform:
+        translateY(-30px)
+        rotate(-3deg);
+
+    box-shadow: 20px 15px 15px 5px #171717;
+    position: relative;
+    z-index: -1;
+}
+.paper .shadow-bottom-right {
+    transform:
+        translateY(-30px)
+        rotate(3deg);
+        
+    box-shadow: -20px 15px 15px 5px #171717;
+    position: relative;
+    z-index: -1;
+}
